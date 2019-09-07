@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/turnBlue"
+        app:cardForegroundColor="@color/absoluteDark"
+        app:cardElevation="30dp"
+        android:padding="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/layout_movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_movie_title"
+                android:textSize="35sp"
+                android:textColor="@color/absoluteDark" />
+
+            <View
+                android:id="@+id/layout_movie_title_sep"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/absoluteDark"
+                android:layout_below="@+id/layout_movie_title" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_movie_title_sep"
+                >
+
+                <TextView
+                    android:id="@+id/layout_movie_desc"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/turnBlue"
+                    android:text="@string/sample_movie_desc" />
+
+                    <TextView
+                        android:id="@+id/layout_movie_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@integer/sample_movie_rating"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:layout_toEndOf="@+id/layout_movie_desc"
+                        />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

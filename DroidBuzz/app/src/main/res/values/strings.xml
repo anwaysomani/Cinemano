@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DroidBuzz</string>
+
+    <!-- Custom -->
+    <string name="sample_movie_title">Movie name</string>
+    <string name="sample_movie_desc">
+        This is a simple movie description. The description can vary for smaller/longer text sizes. Just look out for the sizes, as they may vary.
+    </string>
+    <integer name="sample_movie_rating">5</integer>
+
 </resources>
